@@ -1,0 +1,221 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .header_line {
+    box-shadow: 0 -1px #262626 inset;
+    height: 1px;
+  }
+  
+  .header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  
+  .header_bottom {
+    position: sticky;
+    top: 0;
+    min-height: 10px;
+    background-color: #000;
+    color: #fff;
+    padding: 18px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+   .header_bottom .header_logo {
+    margin-right: 38px;
+  }
+  
+   .header_bottom .header_logo img {
+    height: 100%;
+  }
+  .header_left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header_right {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+  }
+  
+  .header_right .account a,
+  .header_right .search a,
+  .header_right .cart a {
+    padding: 6px 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+  
+  }
+  
+  .header_right .account,
+  .header_right .search {
+    opacity: 0.6;
+  }
+  
+  .header_nav .nav {
+    list-style-type: none;
+    display: flex;
+  }
+  
+  .header_nav .nav .nav_item {
+    padding: 6px 21px;
+  }
+  
+  .header_nav .nav .nav_item a {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  
+  .wrapper {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .form-login {
+    max-width: 400px;
+    background: white(0, 0, 0, 0.8);
+    flex-grow: 1;
+  }
+  
+  .form-heading {
+    font-size: 35px;
+    font-weight: 500;
+    color: black;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .form-input {
+    background: transparent;
+    border: 0;
+    outline: none;
+    width: 400px;
+    border: 1px solid #ddd;
+    font-size: 20px;
+    padding: 16px;
+    font-weight: 500;
+  }
+  .form-input:focus{
+    border-color: #000;
+  }
+  .form-heading-under{
+    padding-bottom: 10px;
+    margin-left: 5px;
+    width: 400px;
+    text-align: center;
+    font-size: 15px;
+    opacity: 0.5;
+    font-weight: 500;
+  }
+  .form-group {
+    position: relative;
+    margin-top: 10px;
+    font-size: 15px;
+  }
+  .form-group .forgot-password{
+    position: absolute;
+    right: 10px;
+    top: 35%;
+    color: #262626;
+  }
+  .form-group .forgot-password:hover{
+    opacity: 0.5;
+  }
+  .form-submit{
+    text-align: center;
+    display: block;
+    width: 400px;
+    font-size: 20px;
+    margin-top: 10px;
+    border: 1px solid black;
+    background-color: black;
+    color: #fff;
+    padding: 10px;
+    font-weight: 500;
+    position: relative;
+    z-index: 1;
+    transition: ease 0.3s;
+  }
+  .form-submit:hover{
+    color: #000;
+    transition: ease 0.3s;
+  }
+  .form-submit::before{
+    content: "";
+    position:absolute;
+    top:0;
+    bottom:0;
+    left: 0;
+    right: 100%;
+    background-color: #fff;
+    z-index:-1;
+    transition: ease 0.3s;
+  }
+  .form-submit:hover::before{
+    right: 0;
+    transition: ease 0.3s;
+  }
+  .under-submit{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 400;
+  }
+  .create-one{
+    color: #262626;
+    opacity: 0.5;
+  }
+  .create-one:hover{
+    opacity:1;
+  }
+  footer.footer {
+    padding: 75px 0 42px;
+    background-color: #000;
+    color: #fff;
+    font-size: 12px;
+  }
+  
+  .footer_content {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer_inner {
+    list-style-type: none;
+    display: flex;
+    font-size: 15px;
+  }
+  
+  .footer_inner .footer_inner_item {
+    padding: 8px 12px;
+  }
+  
+  .footer_aside {
+    margin-top: 80px;
+    width: 100%;
+    opacity: 0.6;
+  }
